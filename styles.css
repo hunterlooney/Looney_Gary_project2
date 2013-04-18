@@ -1,0 +1,50 @@
+/*
+title: Visual Frameworks Project 2 
+name: Gary W. Hunter Looney
+date: 04/18/13
+*/
+
+
+html {
+    background-color: #00ff00;
+}
+body {
+    font-family: "Courier New";
+    background-color: white;
+    color: #006637;
+}
+h1 {
+    background-color: #006637;
+    color: #E1DFD3;
+}
+h2 {
+    background-color: #006637;
+    color: #88a75d;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Look like iPhone(I am going to do this after the assignment is due.) at top
+*/
+/*
+body{font-family:Arial, Helvetica, can-serif;width: 571px;margin: auto;padding 10px;}
+#site-wrapper{background: url(dfaadfdfa.jpg) no-repeat; height:885px;padding-top:
+#content{width: 480px;height: 690px;overflow: scroll;}
+*/
+

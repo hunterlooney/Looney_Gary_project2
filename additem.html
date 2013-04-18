@@ -17,60 +17,62 @@
 <article>
 <p id="myCharacter"> Character Information</p>
 
-<ul>
 <!--Text-->
-	<li> <form> Name: 
-		 <input type="text" name="name"> 
-		 </form>
+<ul>
+<li> <label for="cname">Name: </label> <input type="text" id="cname" /> </li> 
+
 	
 <!--Checkbox--> 
-	<li> Does your character wear glasses? (Check box for yes)
-		<form>
-		<input type="checkbox" name="vehicle" value="Bike">Yes, my character wears glasses. 
-		</form>
+Does your character wear glasses? (Check box for yes)
+<form>
+<input type="checkbox" id="glasses" value="Yes">Yes, my character wears glasses. 
+</form>
 
 <!--Radio-->
-	<li> Is your character male or female?
-		<form>
-		<input type="radio" name="sex" value="male">Male<br>
-		<input type="radio" name="sex" value="female">Female
-		</form>
+Is your character male or female?
+<form>
+<input type="radio" id="sex" value="male">Male<br>
+<input type="radio" id="sex" value="female">Female
+</form>
 
 <!--Date-->
-	<li>
-		Birthdate: <input type="date" name="Birthdate">
+Birthdate: <input type="date" id="birthdate">
 
 <!--dropdown box-->
-	<li> What is the race of your character?
-		<form action=""> <select name="cars">
-			<option value="Reptilian">Reptilian</option>
-			<option value="Feline">Feline</option>
-			<option value="Panda">Panda</option>
-			<option value="Elf">Elf</option>
-			</select>
-		</form>
+What is the race of your character?
+<form action=""> <select id="race">
+<option value="Reptilian">Reptilian</option>
+<option value="Feline">Feline</option>
+<option value="Panda">Panda</option>
+<option value="Elf">Elf</option>
+</select>
+</form>
 
 
 <!--Textarea-->
-	<li> What is one of your friend's full name?	
-		<textarea rows="2" cols="20">
-		</textarea>
+What is one of your friend's full name?	
+<textarea rows="2" cols="20">
+</textarea>
 
 <!--Range-->
-	<li> Height: <input type="range" name="feet" min="5.0" max="7.0">
-		<p> minimum: 5ft; middle: 6ft; maximum: 7ft
-</ul>
+<br>
+Height: <input type="range" id="height" min="5.0" max="7.0">
+<p> minimum: 5ft; middle: 6ft; maximum: 7ft
+
 
 <br>
-<!--Refresh (But going to be clear data)-->
-<a href="additem.html">
-<button>Clear Stored Data</button></a>
+<!--clear data-->
+<input type="button" id="clearButton" value="Clear Stored Data" />
+
+
 <!--Submit-->
-<input type="submit" value="Submit">
+<input type="button" id="submitButton" value="Submit" />
 
 
 
 <p>04-11-13, Gary W. Hunter Looney</p>
 </article>
+
+<script src="main.js" type="text/javascript"></script>
 </body>
 </html>
