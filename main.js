@@ -5,41 +5,25 @@
 
 // Get Element by ID Variables
 var cname = document.getElementById("cname");
-var glasses = document.getElementById("glasses");
 var sex = document.getElementById("sex");
 var birthdate = document.getElementById("birthdate");
 var race = document.getElementById("race");
 var height = document.getElementById("height");
 var submitButton = document.getElementById("submitButton");
 var clearButton = document.getElementById("clearButton");
-var getSelectedGlasses = function () {
+var glasses = document.getElementById("glasses");
+var glassesValue = function () {
 	if(glasses.checked) {
-		value = "Yes";
-	} else {
-		value = "No"
+		glassesValue = "Yes";
+	} else { 
+		glassesValue = "No";
 	}
-	return value;
 };
-
-//Submit Button and Get Data 
-/*
-var getData = function () {
-	getSelectedGlasses();
-	localStorage.setItem("Name", cname.value);
-	localStorage.setItem("Glasses", value);
-	localStorage.setItem("Sex", sex.value);
-	localStorage.setItem("Birthdate", birthdate.value);
-	localStorage.setItem("Race", race.value);
-	localStorage.setItem("Height", height.value);
-};
-submitButton.addEventListener("click", getData);
-*/
-
-function saveData () {
+var saveData = function () {
 	var id = Math.floor(Math.random()*10000001);
 	var item = {};
 		item.name = ["Name: ", cname.value];
-		item.glasses = ["Glasses: ", getSelectedGlasses];
+		item.glasses = ["Glasses: ", glassesValue.value];
 		item.sex = ["Sex: ", sex.value];
 		item.birthdate = ["Birthdate: ", birthdate.value];
 		item.race = ["Race: ", race.value];
@@ -47,17 +31,11 @@ function saveData () {
 	localStorage.setItem(id, JSON.stringify(item));
 	alert("Character Added!");
 };
-submitButton.addEventListener("click", saveData);
-
-//Clear Button
 var clearData = function () {
 	localStorage.clear();
 	alert("Data Cleared!");
 
 };
-clearButton.addEventListener("click", clearData);
-
-
 var getTheData = function () {
 	var makeDivision = document.createElement('div');
 		makeDivision.setAttribute("id", "items");
@@ -80,6 +58,8 @@ var getTheData = function () {
 		}
 	}
 };
-
 var displayButton = document.getElementById('displayButton');
+
+clearButton.addEventListener("click", clearData);
 displayButton.addEventListener("click", getTheData);
+submitButton.addEventListener("click", saveData);
