@@ -1,45 +1,45 @@
 <!doctype html>
 <html>
 <head>
-    <title>Gary W. Hunter Looney :: Add Character :: Project 1 :: Term 1304 </title>
+    <title>Gary W. Hunter Looney :: Add Character :: Project 2 :: Term 1304 </title>
     <meta charset="utf-8" />
 	<meta name="keywords" content="HTML, Add, Character">
     <meta name="description" content="Add a Character to a Game.">
 	<meta name="robots" content="noindex">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="styles.css" type="text/css" />
 
 </head>
 <body>
+<div id="wrap">
+
 <header>
     <h1>Add the Character!</h1>
+    <h2>Character Information</h2>
 </header>
 
 <article>
-<p id="myCharacter"> Character Information</p>
-
-<!--Text-->
 <ul>
-<li> <label for="cname">Name: </label> <input type="text" id="cname" /> </li> 
+<li> <label for="cname">Name: </label> <input type="text" id="cname" /> </li> 	
 
-	
-<!--Checkbox--> 
-Does your character wear glasses? (Check box for yes)
+<br>
+<li> <label for="glasses">Does your character wear glasses? </li>
 <form>
 <input type="checkbox" id="glasses" value="Yes">Yes, my character wears glasses. 
 </form>
 
-<!--Radio-->
-Is your character male or female?
+<br>
+<li> Is your character male or female? </li>
 <form>
 <input type="radio" id="sex" value="male">Male<br>
 <input type="radio" id="sex" value="female">Female
 </form>
 
-<!--Date-->
-Birthdate: <input type="date" id="birthdate">
+<br>
+<li>Birthdate: <input type="date" id="birthdate"> </li>
 
-<!--dropdown box-->
-What is the race of your character?
+<br>
+<li>What is the race of your character? </li>
 <form action=""> <select id="race">
 <option value="Reptilian">Reptilian</option>
 <option value="Feline">Feline</option>
@@ -48,31 +48,21 @@ What is the race of your character?
 </select>
 </form>
 
-
-<!--Textarea-->
-What is one of your friend's full name?	
-<textarea rows="2" cols="20">
-</textarea>
-
-<!--Range-->
 <br>
-Height: <input type="range" id="height" min="5.0" max="7.0">
+<li>Height: <input type="range" id="height" min="5.0" max="7.0"></li>
 <p> minimum: 5ft; middle: 6ft; maximum: 7ft
 
-
 <br>
-<!--clear data-->
+<br>
 <input type="button" id="clearButton" value="Clear Stored Data" />
-
-
-<!--Submit-->
 <input type="button" id="submitButton" value="Submit" />
-
-
-
-<p>04-11-13, Gary W. Hunter Looney</p>
 </article>
+
+<footer>
+<p>04-18-13, Gary W. Hunter Looney</p>
+</footer>
 
 <script src="main.js" type="text/javascript"></script>
 </body>
+
 </html>
