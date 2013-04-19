@@ -33,11 +33,8 @@ var clearData = function () {
 clearButton.addEventListener("click", clearData);
 
 
-
-//Apply CSS Style
 //Apply JavaScript: Save Data
 //Apply JavaScript: Get Data
-//Apply JavaScript: Clear Data
 //Apply JavaScript: Array Function
 
 //JavaScript: Save Data
